@@ -1,0 +1,17 @@
+CREATE jobs 3 string int bool job salary is_cs
+DELETE from somma where salary > 100000
+INSERT into jobs 5 rows
+quant 500000 true
+swe 200000 true
+doctor 175000 false
+fullstack 150000 true
+author 15000 false
+CREATE occupations 2 string string name occupation
+INSERT into occupations 5 rows
+marco quant
+shri swe
+angel author
+gus doctor
+name occupation
+JOIN jobs and occupations where job = occupation and print 3 name 2 job 1 salary 1
+QUIT

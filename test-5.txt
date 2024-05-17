@@ -1,0 +1,10 @@
+CREATE snu 1 string name
+INSERT into snu 1 rows
+dutch
+PRINT from snu 1 name ALL
+CREATE maize 1 string coder
+INSERT into maize 2 rows
+dutch
+aryan
+JOIN snu and maize where name = coder and print 2 name 1 coder 2
+QUIT

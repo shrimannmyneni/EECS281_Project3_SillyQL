@@ -1,0 +1,28 @@
+CREATE tablerone 3 bool string double active label cost
+CREATE tablerone 3 bool int int surprise cat burger
+CREATE testosterone 3 bool string double active individual burger
+INSERT INTO tablerone 4 ROWS
+true Large 0.2
+false colorful 1.8
+false kanye 8.9
+true people 0.67
+# now that we have info we finna test it
+PRINT FROM tablerone 3 active label cost ALL
+JOIN tablerone AND testosterone WHERE label = individual AND PRINT 2 label 1 burger 2
+PRINT FROM tee200 3 active label cost ALL
+GENERATE FOR tablerone hash INDEX ON label
+GENERATE FOR tablerone bst INDEX ON cost
+PRINT FROM tablerone 2 cost label WHERE cost = 1.8
+PRINT FROM tablerone 2 cost label WHERE label = colorful
+GENERATE FOR tablerone bst INDEX ON cost
+INSERT INTO testosterone 3 ROWS
+true poop 0.77
+false juice 0.22
+false navy 7.29
+JOIN tablerone AND testosterone WHERE active = active AND PRINT 2 label 1 burger 2
+GENERATE FOR testosterone hash INDEX ON individual
+PRINT FROM testosterone 2 burger individual WHERE active = false
+REMOVE testosterone
+REMOVE tablerone
+# EOF
+QUIT

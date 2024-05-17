@@ -1,0 +1,16 @@
+CREATE Aesthetics 5 int int string bool double Symmetry SkinCare Routine Effort Glow
+INSERT INTO Aesthetics 10 ROWS
+1 100 Mewing true 10.5
+2 200 Skincare false 20.5
+3 300 Gymcel true 30.5
+4 400 Hairline false 40.5
+5 500 Tan true 50.5
+6 600 Fillers false 60.5
+7 700 Peels true 70.5
+8 800 Fragrance false 80.5
+9 900 Fashion true 90.5
+10 1000 Ortho false 100.5
+PRINT FROM Aesthetics 5 Symmetry SkinCare Routine Effort Glow ALL
+DELETE FROM Aesthetics WHERE Symmetry > 5
+PRINT FROM Aesthetics 5 Symmetry SkinCare Routine Effort Glow ALL
+QUIT

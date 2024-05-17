@@ -1,0 +1,21 @@
+CREATE frattable 2 string bool name is_in_frat
+CREATE maize 2 string string coder team   
+Insert into frattable 5 rows
+shri true
+joe false 
+josh true
+aryan false
+taint true
+Insert into maize 5 rows
+shri be 
+joe fe
+aryan fe
+josh be
+rob bruh
+JOIN frattable and maize where name = coder and print 3 name 1 is_in_frat 1 team 2
+PRINT FROM frattable 1 name ALL
+PRINT FROM frattable 2 name is_in_frat WHERE is_in_frat = true
+GENERATE for frattable hash index on is_in_frat
+GENERATE for maize bst index on team
+DELETE FROM frattable WHERE is_in_frat = false
+QUIT

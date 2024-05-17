@@ -1,0 +1,12 @@
+CREATE SelfImprovement 3 string int bool Name Age Discipline
+CREATE Lifestyle 3 string double bool Name Income Fitness
+INSERT INTO SelfImprovement 3 ROWS
+sigma 30 true
+beta 25 false
+tau 40 true
+INSERT INTO Lifestyle 3 ROWS
+sigma 80000.00 true
+beta 60000.00 false
+tau 90000.00 true
+JOIN SelfImprovement AND Lifestyle WHERE Name = Name AND PRINT 6 Name 1 Age 1 Discipline 1 Income 2 Fitness 2
+QUIT

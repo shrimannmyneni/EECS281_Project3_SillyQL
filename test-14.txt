@@ -1,0 +1,10 @@
+# Test Case: Data Type Edge Cases in Looksmaxxing
+CREATE EnhancementLimits 4 int double string bool ID Limit Technique Viable
+INSERT INTO EnhancementLimits 4 ROWS
+2147483647 1.79769e+308 MaxLift true
+-2147483648 -1.79769e+308 Jelqing false
+0 0.0 Baseline true
+INSERT INTO EnhancementLimits 1 ROWS
+0 0.00000000000001 MicroGains true
+PRINT FROM EnhancementLimits 4 ID Limit Technique Viable ALL
+QUIT

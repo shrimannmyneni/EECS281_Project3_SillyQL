@@ -1,0 +1,34 @@
+CREATE greek 4 string int bool double frat rank top zing
+INSERT INTO greek 7 ROWS
+phidelt 2 true 7.0
+aepi 8 true 9.0
+fiji 5 true 5.8
+phipsi 1 false 11.2
+asig 4 true 9.0
+pike 5 false 5.7
+dsig 8 true 6.8
+GENERATE FOR greek hash INDEX ON frat
+PRINT FROM greek 4 frat rank top zing ALL
+PRINT FROM greek 4 frat rank top zing WHERE frat = asig
+GENERATE FOR greek bst INDEX ON frat
+PRINT FROM greek 4 frat rank top zing ALL
+PRINT FROM greek 4 frat rank top zing WHERE frat > asig
+GENERATE FOR greek hash INDEX ON rank
+PRINT FROM greek 4 frat rank top zing ALL
+PRINT FROM greek 4 frat rank top zing WHERE rank = 5
+GENERATE FOR greek bst INDEX ON rank
+PRINT FROM greek 4 frat rank top zing ALL
+PRINT FROM greek 4 frat rank top zing WHERE rank < 5
+GENERATE FOR greek hash INDEX ON top
+PRINT FROM greek 4 frat rank top zing ALL
+PRINT FROM greek 4 frat rank top zing WHERE top = false
+GENERATE FOR greek bst INDEX ON top
+PRINT FROM greek 4 frat rank top zing ALL
+PRINT FROM greek 4 frat rank top zing WHERE top > false
+GENERATE FOR greek hash INDEX ON zing
+PRINT FROM greek 4 frat rank top zing ALL
+PRINT FROM greek 4 frat rank top zing WHERE zing = 5.8
+GENERATE FOR greek bst INDEX ON zing
+PRINT FROM greek 4 frat rank top zing ALL
+PRINT FROM greek 4 frat rank top zing WHERE zing > 5.9
+QUIT

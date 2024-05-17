@@ -1,0 +1,10 @@
+# Test Case: Selective Deletion with Mixed Data Types and Indexing
+CREATE Transformation 5 string double bool int string Name Rating Achieved Milestones Notes
+INSERT INTO Transformation 3 ROWS
+tuul 7.5 true 3 posture 
+jelq 8.2 false 2 flexibility
+dutch 7.5 true 5 skin
+GENERATE FOR Transformation bst INDEX ON Rating
+DELETE FROM Transformation WHERE Achieved = true
+PRINT FROM Transformation 5 Name Rating Achieved Milestones Notes ALL
+QUIT

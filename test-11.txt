@@ -1,0 +1,35 @@
+CREATE looksmaxxing 3 string string bool male_type person positive_canthal_tilt
+INSERT INTO looksmaxxing 8 ROWS
+alpha man true
+beta students false
+gamma office_hours true
+beta students true
+beta woman true
+alpha man true
+alpha john true
+sigma john true
+DELETE FROM looksmaxxing WHERE person = man
+GENERATE FOR looksmaxxing bst INDEX ON male_type
+PRINT FROM looksmaxxing 2 person male_type WHERE positive_canthal_tilt = true
+PRINT FROM looksmaxxing 1 male_type ALL
+CREATE males 3 string bool bool Name sigma? alpha?
+CREATE eboard 1 string name
+INSERT INTO eboard 9 rows
+jelq
+tuul
+dutch
+gooner
+doof
+transit
+client
+scissors
+jkdobbins
+INSERT INTO males 3 ROWS
+Name false false
+jelq true true
+smreed true false
+JOIN males AND looksmaxxing WHERE Name = person AND PRINT 3 Name 1 male_type 2 sigma? 1
+REMOVE shopping
+REMOVE looksmaxxing
+REMOVE eboard
+QUIT

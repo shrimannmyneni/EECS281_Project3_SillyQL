@@ -1,0 +1,26 @@
+CREATE referee 3 string int bool soccer ball frat
+INSERT INTO referee 7 ROWS
+snu 2 true
+asig 9 true
+phidelt 5 true
+pike 1 false
+phipsi 4 true
+dchi 5 false
+phitau 9 true
+PRINT From referee 3 soccer ball frat ALL
+PRINT From referee 3 soccer ball frat WHERE ball > 5
+PRINT From referee 3 soccer ball frat WHERE ball < 1
+PRINT From referee 3 soccer ball frat WHERE ball > 9
+GENERATE for referee bst INDEX ON ball
+PRINT From referee 3 soccer ball frat ALL
+PRINT From referee 3 soccer ball frat WHERE ball > 9
+PRINT From referee 3 soccer ball frat WHERE ball > 5
+PRINT From referee 3 soccer ball frat WHERE ball < 1
+GENERATE for referee bst INDEX ON frat
+PRINT From referee 3 soccer ball frat ALL
+PRINT From referee 3 soccer ball frat WHERE ball > 5
+PRINT From referee 3 soccer ball frat WHERE frat > true
+PRINT From referee 3 soccer ball frat WHERE frat < true
+PRINT From referee 3 soccer ball frat WHERE frat < false
+PRINT From referee 3 soccer ball frat WHERE frat > false
+QUIT

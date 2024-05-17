@@ -1,0 +1,33 @@
+CREATE frattable 2 string string frat ifc
+Insert into frattable 7 rows
+snu true
+dchi false
+asig false
+fiji true
+tdx true
+phipsi false
+frat false
+DELETE from frattable WHERE frat > tdx 
+DELETE from frattable WHERE frat < asig
+DELETE from frattable WHERE ifc < true
+DELETE from frattable WHERE ifc < false
+DELETE from frattable WHERE ifc > true
+DELETE from frattable WHERE ifc > false
+DELETE from frattable WHERE ifc < true
+DELETE from frattable WHERE ifc < false
+DELETE from frattable WHERE ifc > true
+DELETE from frattable WHERE ifc > false
+INSERT INTO frattable 8 ROWS
+frat false
+frat false
+frat false
+frat false
+frat false
+frat false
+frat false
+frat false
+DELETE from frattable WHERE ifc < false
+DELETE from frattable WHERE ifc > true
+DELETE from frattable WHERE ifc = true
+DELETE from frattable WHERE ifc = false
+QUIT
