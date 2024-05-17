@@ -1,0 +1,35 @@
+CREATE students 3 int string double ID Name GPA
+CREATE courses 2 string int Code Credits
+CREATE enrollments 2 int string StudentID CourseCode
+INSERT INTO students 4 ROWS
+1 John 3.5
+2 Jane 3.7
+3 Jake 3.9
+4 StudentID 4.0
+INSERT INTO courses 3 ROWS
+EECS280 4
+EECS281 4
+Code 4
+INSERT INTO enrollments 4 ROWS
+1 EECS280
+1 EECS281
+2 EECS280
+3 EECS281
+CREATE students 3 int string double ID Name GPA
+INSERT INTO students 2 ROWS
+4 Alice 3.8
+3 Name 4.0
+PRINT FROM students 3 ID Name GPA ALL
+PRINT FROM courses 2 Code Credits ALL
+PRINT FROM enrollments 2 StudentID CourseCode ALL
+PRINT FROM professors 2 Name Department ALL
+DELETE FROM students WHERE GPA > 3.8
+PRINT FROM students 3 ID Name GPA ALL
+JOIN students AND enrollments WHERE ID = StudentID AND PRINT 4 Name 1 CourseCode 2 ID 1 GPA 1
+JOIN students AND registrations WHERE ID = StudentID AND PRINT 4 Name 1 CourseCode ID GPA
+PRINT FROM students 3 ID Name Major ALL
+GENERATE FOR students hash INDEX ON ID
+GENERATE FOR courses bst INDEX ON Code
+REMOVE students
+PRINT FROM students 3 ID Name GPA ALL
+QUIT

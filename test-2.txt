@@ -1,0 +1,11 @@
+CREATE regulartable 3 string string bool emotion person(s) likes_dogs?
+NSERT INTO 281class 8 ROWS
+happy Darden true
+stressed students false
+busy office_hours true
+stressed students true
+stressed Paoletti true
+happy Darden true
+happy Sith true
+victorious Sith true
+QUIT

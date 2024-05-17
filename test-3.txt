@@ -1,0 +1,17 @@
+CREATE pets 4 string bool bool int Name likes_cats? likes_dogs? play
+INSERT INTO pets 2 ROWS
+Sith true true 3
+Paoletti true false 2
+DELETE FROM pets WHERE likes_cats = true
+INSERT into pets 4 ROWS
+doof true true 13
+tuul true true 6
+lt false true 4
+ethan true false 3
+DELETE FROM pets WHERE play < 5
+INSERT into pets 3 ROWS
+scissors false true 7
+jingles true true 5
+deada$$ true false 2
+PRINT FROM pets 2 Name play WHERE play > 2
+QUIT
